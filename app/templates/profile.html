@@ -1,0 +1,44 @@
+    {% extends "base.html" %}
+
+    {% block main %}
+        <div class="profile-container">
+            <div class ="profile-header">
+                <div class="profile-photo">
+                    <img src="{{ url_for('static', filename='images/jay-pic.png') }}" alt="Profile Picture" class="profile-img">
+                </div>
+                <div class="profile-name">
+                    <h2 class="profile-name-text">Jade Palmer</h2>
+                </div>
+                <div class="profile-username">
+                    <h6 class="profile-username-text">@jay-devz</h6>
+                </div>
+                <div class="profile-location">
+                    <p class="profile-location-text">St. Catherine, Jamaica</p>
+                </div>
+                <div class="profile-join-date">
+                    <p class="joined-date-text">Joined {{ date_joined }}</p>
+                </div>
+
+            </div>
+            <div class ="profile-bio">
+                <p class="profile-bio-text">Web Developer | Molecular Biologist | Chocolate Lover</p>
+            </div>
+            <div class="profile-stats">
+                <div class="profile-posts-count">
+                    <p class="stat"><strong>150</strong></p>
+                    <p class="stat-label">Posts</p>
+                </div>
+                <div class="profile-following-count">
+                    <p class="stat"><strong>150</strong></p>
+                    <p class="stat-label">Following</p>
+                </div>
+                <div class="profile-followers-count">
+                    <p class="stat"><strong>200</strong></p>
+                    <p class="stat-label">Followers</p>
+                </div>
+            </div>
+            <div class="follow-button">
+                <button class="follow-btn">Follow</button>
+            </div>
+        </div>
+    {% endblock %}
